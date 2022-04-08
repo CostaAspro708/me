@@ -1,4 +1,20 @@
 import './App.css';
+import resume_pdf from "./Costa-Resume.pdf";
+
+function NavBar(){
+
+  return(
+    <nav>
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Work Experience</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact</a></li>
+            <li class="Resume"><a href={resume_pdf} target="_blank">Resume</a></li>
+          </ul>
+    </nav>
+  );
+}
 
 function App() {
   return (
@@ -7,14 +23,7 @@ function App() {
       <div class="logo">
             Costa Aspromourgos
           </div>
-        <nav>
-          <ul>
-            <li><a>1</a></li>
-            <li><a>2</a></li>
-            <li><a>3</a></li>
-            <li><a>4</a></li>
-          </ul>
-        </nav>
+          <NavBar/>
       </header>
       <body className="App-body">
         body
