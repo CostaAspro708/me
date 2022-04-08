@@ -1,0 +1,2 @@
+html{background:#121212;color:#03dac6}ul{display:flex;justify-content:space-evenly;list-style-type:none}ul li{margin-right:1rem}ul li a{font-size:1.3rem;padding:8px 10px}ul li a:hover{background-color:gray;border:4px;transition:.5s}header .logo{font-size:2rem;margin:0 1.5rem}header{align-items:center;background-color:rgba(0,0,0,.7);display:flex;height:14vh;justify-content:space-between;padding:2rem 0}
+/*# sourceMappingURL=main.d2a63a8e.css.map*/
