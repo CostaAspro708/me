@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.d2a63a8e.css",
-    "main.js": "/me/static/js/main.fd9f83f5.js",
+    "main.css": "/me/static/css/main.65427ab7.css",
+    "main.js": "/me/static/js/main.0a9c4d1e.js",
+    "static/media/Costa-Resume.pdf": "/me/static/media/Costa-Resume.8d084f520b969d2178dd.pdf",
     "index.html": "/me/index.html",
-    "main.d2a63a8e.css.map": "/me/static/css/main.d2a63a8e.css.map",
-    "main.fd9f83f5.js.map": "/me/static/js/main.fd9f83f5.js.map"
+    "main.65427ab7.css.map": "/me/static/css/main.65427ab7.css.map",
+    "main.0a9c4d1e.js.map": "/me/static/js/main.0a9c4d1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2a63a8e.css",
-    "static/js/main.fd9f83f5.js"
+    "static/css/main.65427ab7.css",
+    "static/js/main.0a9c4d1e.js"
   ]
 }
