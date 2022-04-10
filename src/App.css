@@ -71,6 +71,7 @@ body .Me p{
 @media (max-width: 735px){
     body {
         overflow-x: hidden;
+        
     }
     .hamburger{
         display: flex;
@@ -83,7 +84,7 @@ body .Me p{
         right: -150%;
         background-color: rgba(0, 0, 0, 0.7);
         height: 86vh;
-        width: 100%;
+        width: 75%;
         align-items: center;
         transition: right 0.3s ease-in;
     }
@@ -95,6 +96,11 @@ body .Me p{
         right:0;
         transition: right 0.3s ease-in;
     }
+
+    .fixed-position {
+        position: fixed;
+     }
+
     .cross .bar:nth-child(2){
         opacity: 0;
     }
