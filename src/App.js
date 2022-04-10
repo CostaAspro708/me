@@ -31,17 +31,6 @@ function NavBar(){
   );
 }
 
-function SideBar(){
-
-  return(
-    <div class="sidebar">
-      <ul>
-      <li>github</li>
-      <li>linked in</li>
-      </ul>
-    </div>
-  );
-}
 
 function App() {
   
@@ -56,7 +45,6 @@ function App() {
           <NavBar/>
       </header> 
       <body className="App-body">
-        <SideBar/>
         <div class="Me">
           <h3>Hi my name is</h3>
           <h2>Costa Aspromourgos</h2>
