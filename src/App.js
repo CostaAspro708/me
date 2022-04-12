@@ -1,10 +1,14 @@
 import './App.css';
 import resume_pdf from "./Costa-Resume.pdf";
 import { useEffect } from 'react';
+
+import Link from '@material-ui/core/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Link from '@material-ui/core/Link';
 import FacebookIcon from '@mui/icons-material/Facebook';
+
+import Emoji from "./components/Emoji";
+
 function NavBar(){
   useEffect(() => {
     const hamburger = document.getElementById('hamburger');
@@ -68,12 +72,21 @@ function App() {
       </header>
       
       <body className="App-body" class="app-body">
-        <div class="Me">
-          <h3>Hi my name is</h3>
-          <h2>Costa Aspromourgos</h2>
-          <h2>I'm a Software Engineering student looking for an internship</h2>
-          <p class="para"> A I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passI am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.ion for.</p>
-        </div>
+        <div class="intro">
+          <h3>&lt;</h3>
+          <div class="hi">
+            <h3>Hi, there <Emoji symbol="👋"/> </h3>
+            <h2>I'm </h2> <h2 class="name">Costa Aspromourgos</h2>
+            <h3>I love to build all types things</h3>
+          </div>
+          <h3>/&gt;</h3>
+          </div>
+          <div class="contact">
+            Contact Me
+          </div>
+          <div class="about">
+            <p class="para"> A I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passI am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.I am a third-year university student currently undertaking a Bachelor of Engineering majoring in Software and Computer Systems at the Queensland University of Technology, which I have an immense passion for.ion for.</p>
+          </div>
       </body> 
       <SideBar/>
     </div>

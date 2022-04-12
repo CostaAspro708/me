@@ -97,8 +97,45 @@ header {
     width: 500px;
 }
 
+.intro {
+    padding-top: 70px;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 900;
+    padding-top: 30px;
+    margin-top: 50px;
+    display: inline;
+    color: white;
+
+}
+ .intro h2.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(0, 174, 90);
+}
+
+.intro h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 0;
+     
+}
+.intro .hi {
+    padding-left: 70px;
+}
 .app-body {
     margin-left: 100px; /* Same as sidebar width*/
+}
+
+.about {
+    padding-top: 100px;
+}
+.contact {
+    text-align: center;
 }
 @media (max-width: 760px){
     .app-body {
