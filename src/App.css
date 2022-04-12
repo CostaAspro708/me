@@ -59,17 +59,78 @@ header .logo{
 header {
     display: flex;
     justify-content: space-between;
-    /* background-color: rgba(0,0,0,0.7); */
     align-items: center;
     padding: 2rem 0rem;
     height: 7vh;
+}
+
+.sidebar {
+    
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 100px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    top:0;
+    left: 0;
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-top: 200px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.sidebar ul li {
+    margin-top: 25px;
+}
+.link {
+    color: #03dac6;
+}
+.link:hover {
+    color: #03da96; 
 }
 
 .para {
     width: 500px;
 }
 
-@media (max-width: 735px){
+.app-body {
+    margin-left: 100px; /* Same as sidebar width*/
+}
+@media (max-width: 760px){
+    .app-body {
+        margin-left: 5px; /* Same as sidebar width*/
+    }
+    .sidebar {
+        height: 100px;
+        width: 100%;
+        top: auto;
+        position: absolute;
+        margin-right: 0;
+        
+        
+    }
+    .sidebar ul {
+        top: auto;
+        padding-top: 0;
+        transform: none;
+        -ms-transform: none;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        position: static;
+
+    }
+    .sidebar ul li {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        position: static;
+    }
     body {
         overflow-x: hidden;
         
