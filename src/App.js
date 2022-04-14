@@ -10,6 +10,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Emoji from "./components/Emoji";
 import programmerImg from "./img/generic-programmer.jpg";
 
+import Projects from "./components/Projects";
+
 function NavBar(){
 
   return(
@@ -76,7 +78,7 @@ function App() {
           <div class="hi">
             <h3>Hi, there <Emoji symbol="👋"/> </h3>
             <h2>I'm </h2> <h2 class="name">Costa Aspromourgos</h2>
-            <h3>I love to build all types things</h3>
+            <h3>I love to build all types of things</h3>
           </div>
           <h3>/&gt;</h3>
           </div>
@@ -90,18 +92,52 @@ function App() {
         <div class="skills">
           <h1>My Skills</h1>
           <div class="container">
-            <ul class="frameworks">
-              <li>skill 1</li>
-              <li>skill 2</li>
-              <li>skill 3</li>
-            </ul>
+            <div class="languages">
+              <h5>Languages</h5>
+              <ul>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C#</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="frameworks">
+              <h5>Frameworks</h5>
+              <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Laravel</li>
+              </ul>
+            </div>
+            <div class="other">
+              <h5>Other</h5>
+              <ul>
+                <li>AWS</li>
+                <li>Git</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="Me">
-                 </div>
+        <div class="projects">
+          <h1>Noteworthy Projects</h1>
+          <Projects/>
+        </div>
         <div class="sidebar-container">
-          <SideBar/> 
+         
           </div>
+        <div class="contact">
+          <h1>Contact Me!</h1>
+          <p>I would love to hear from you feel free to contact me through my email or mobile.</p>
+          <ul>
+            <li> <h1> <a href="mailto: cgaspro@gmail.com">cgaspro@gmail.com</a> </h1></li>
+            <li> <h1> 0447 364 567 </h1></li>
+          </ul>
+        </div>
+        <SideBar/> 
       </body>
       
     </div>
