@@ -13,7 +13,7 @@ nav ul {
 }
 nav ul li{
     margin-right: 1rem;
-
+    cursor: pointer;
 }
 
 nav ul li a {
@@ -23,7 +23,7 @@ nav ul li a {
     color: #03dac6;
 }
 
-nav ul li:nth-child(5) a{
+nav ul li:nth-child(4) a{
     border-radius: 5px;
     border: solid #03dac6;
     border-width: thin;
@@ -141,6 +141,33 @@ h2 {
 .intro .hi {
     padding-left: 70px;
 }
+
+.my_resume {
+    z-index: 1;
+    padding-top: 250px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.my_resume a{
+    z-index: 1;
+    color: rgb(0, 174, 90);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid rgb(0, 174, 90);
+    border-width: thin;
+}
+.my_resume a:hover{
+    z-index: 1;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: 0.25s;
+} */
 .app-body {
     margin-left: 100px; /* Same as sidebar width*/
 }
@@ -185,6 +212,9 @@ h2 {
     font-size: small;
     color: rgb(0, 174, 90);
 }
+.skill_heading {
+    font-size: 17px;
+}
 .list{
     list-style: none;
 }
@@ -192,31 +222,6 @@ h2 {
 .projects {
     padding-top: 200px;
 }
-/* .contact {
-    margin-top: 100px;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: #4CAF50;  
-}
-.contact a {
-    color: rgb(0, 174, 90);
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    border: solid rgb(0, 174, 90);
-    border-width: thin;
-}
-
-.contact a:hover{
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    transition: 0.25s;
-} */
 
 .contact {
     padding-top: 200px;
@@ -299,7 +304,7 @@ h2 {
     .hamburger{
         display: flex;
         cursor: pointer;
-        z-index: 2;
+        z-index: 6;
     }
     nav ul {
         padding-top: 100px;
@@ -312,6 +317,7 @@ h2 {
         width: 50%;
         align-items: center;
         transition: right 0.3s ease-in;
+        z-index: 5;
     }
     nav ul li {
         margin-right: 15px;

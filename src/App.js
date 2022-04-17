@@ -12,6 +12,7 @@ import programmerImg from "./img/generic-programmer.jpg";
 
 import Projects from "./components/Projects";
 
+import $ from "jquery";
 function NavBar(){
 
   return(
@@ -22,11 +23,10 @@ function NavBar(){
             <span class="bar"></span>
           </a>
           <ul>
-            <li><a>About</a></li>
-            <li><a>Experience</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
-            <li class="Resume"><a href={resume_pdf} target="_blank">Resume</a></li>
+            <li><a class="about_link">About</a></li>
+            <li><a class="skills_link">Skills</a></li>
+            <li><a class="projects_link">Projects</a></li>
+            <li><a class="contact_link">Contact</a></li>
           </ul>
     </nav>
   );
@@ -62,6 +62,33 @@ function App() {
       hamburger.classList.toggle('cross');
       document.body.classList.toggle('fixed-position');
     })
+
+    $(".about_link").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".about").offset().top},
+          'slow');
+    });
+
+    $(".skills_link").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".skills").offset().top},
+          'slow');
+    });
+
+    $(".projects_link").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".projects").offset().top},
+          'slow');
+    });
+
+    $(".contact_link").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".contact").offset().top},
+          'slow');
+    });
+
+    
+
   });
   
   return (
@@ -81,6 +108,7 @@ function App() {
             <h3>I love to build all types of things</h3>
           </div>
           <h3>/&gt;</h3>
+          <div class="my_resume"> <a href={resume_pdf} target="_blank">Resume</a> </div>
           </div>
         <div class="about">
           <h1>About Me</h1>
@@ -93,7 +121,7 @@ function App() {
           <h1>My Skills</h1>
           <div class="container">
             <div class="languages">
-              <h5>Languages</h5>
+              <h5 class="skill_heading">Languages</h5>
               <ul>
                 <li>Javascript</li>
                 <li>Python</li>
@@ -105,7 +133,7 @@ function App() {
               </ul>
             </div>
             <div class="frameworks">
-              <h5>Frameworks</h5>
+              <h5 class="skill_heading">Frameworks</h5>
               <ul>
                 <li>React.js</li>
                 <li>Node.js</li>
@@ -113,7 +141,7 @@ function App() {
               </ul>
             </div>
             <div class="other">
-              <h5>Other</h5>
+              <h5 class="skill_heading">Other</h5>
               <ul>
                 <li>AWS</li>
                 <li>Git</li>
