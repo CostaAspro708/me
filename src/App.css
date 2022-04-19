@@ -6,6 +6,12 @@
     color: #03dac6;
   }
 
+  .icon {
+
+    overflow: hidden;
+  }
+  
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -167,13 +173,14 @@ h2 {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     transition: 0.25s;
-} */
+} 
 .app-body {
     margin-left: 100px; /* Same as sidebar width*/
 }
 
 .about {
     padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .about .container{
@@ -188,12 +195,16 @@ h2 {
 }
 
 .skills {
-    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .skills .container {
     display: flex;
     justify-content: space-evenly;
+    background-color: #1f2933a7;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .skills .container ul{
@@ -220,12 +231,21 @@ h2 {
 }
 
 .projects {
-    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .contact {
-    padding-top: 200px;
     padding-bottom: 50px;
+
+}
+
+.contact-content{
+    background-color: #1f2933a7;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 10px;
+    margin-top: 25px;
 }
 
 .contact ul {
@@ -307,9 +327,10 @@ h2 {
         z-index: 6;
     }
     nav ul {
+       
         padding-top: 100px;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 0vh;
         right: -150%;
         background-color: #1f2933;
@@ -329,11 +350,26 @@ h2 {
         right:0;
         transition: right 0.3s ease-in;
     }
-
+    .contact ul{
+        flex-direction: column;
+        align-items: center;
+    }
     .fixed-position {
         overflow: hidden;
      }
+    .blurr{
+        padding-bottom: 200px;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
 
+    .cross{
+        position: fixed;
+    }
+   
     .cross .bar:nth-child(2){
         opacity: 0;
     }

@@ -8,9 +8,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 import Emoji from "./components/Emoji";
+
 import programmerImg from "./img/generic-programmer.jpg";
+import logoImg from "./img/test_logo.jpg";
 
 import Projects from "./components/Projects";
+import Paper from '@material-ui/core/Paper';
 
 import $ from "jquery";
 function NavBar(){
@@ -52,10 +55,18 @@ function SideBar(){
   );
 }
 
+function burgerClick(){
+    const hamburger = document.getElementById('hamburger');
+    const ul = document.querySelector('nav > ul');
+    ul.classList.toggle('menu-slide');
+    hamburger.classList.toggle('cross');
+    document.body.classList.toggle('fixed-position');
+}
 function App() {
   
   useEffect(() => {
     const hamburger = document.getElementById('hamburger');
+    const app = document.getElementById('App');
     hamburger.addEventListener('click', function(e){
       const ul = document.querySelector('nav > ul');
       ul.classList.toggle('menu-slide');
@@ -64,24 +75,28 @@ function App() {
     })
 
     $(".about_link").click(function() {
+      burgerClick();
       $('html,body').animate({
           scrollTop: $(".about").offset().top},
           'slow');
     });
 
     $(".skills_link").click(function() {
+      burgerClick()
       $('html,body').animate({
           scrollTop: $(".skills").offset().top},
           'slow');
     });
 
     $(".projects_link").click(function() {
+      burgerClick()
       $('html,body').animate({
           scrollTop: $(".projects").offset().top},
           'slow');
     });
 
     $(".contact_link").click(function() {
+      burgerClick()
       $('html,body').animate({
           scrollTop: $(".contact").offset().top},
           'slow');
@@ -92,12 +107,13 @@ function App() {
   });
   
   return (
-    <div class="App">
+    <div class="App" id="App">
       <header className="App-header">
-      <div class="logo">
-            CA
+      <div class="icon">
+            <img class="icon-content" src={logoImg}/>
           </div>
           <NavBar/>
+      
       </header> 
       <body className="App-body">
       <div class="intro">
@@ -105,7 +121,7 @@ function App() {
           <div class="hi">
             <h3>Hi, there <Emoji symbol="👋"/> </h3>
             <h2>I'm </h2> <h2 class="name">Costa Aspromourgos</h2>
-            <h3>I love to build all types of things</h3>
+            <h3>I love to make all types of things.</h3>
           </div>
           <h3>/&gt;</h3>
           <div class="my_resume"> <a href={resume_pdf} target="_blank">Resume</a> </div>
@@ -118,7 +134,9 @@ function App() {
           </div>
         </div>
         <div class="skills">
+         
           <h1>My Skills</h1>
+           
           <div class="container">
             <div class="languages">
               <h5 class="skill_heading">Languages</h5>
@@ -140,6 +158,7 @@ function App() {
                 <li>Laravel</li>
               </ul>
             </div>
+            
             <div class="other">
               <h5 class="skill_heading">Other</h5>
               <ul>
@@ -159,11 +178,13 @@ function App() {
           </div>
         <div class="contact">
           <h1>Contact Me!</h1>
+          <div class="contact-content">
           <p>I would love to hear from you feel free to contact me through my email or mobile.</p>
           <ul>
             <li> <h1> <a href="mailto: cgaspro@gmail.com">cgaspro@gmail.com</a> </h1></li>
             <li> <h1> 0447 364 567 </h1></li>
           </ul>
+          </div>
         </div>
         <SideBar/> 
       </body>
