@@ -44,10 +44,10 @@ function SideBar(){
             <Link href="https://github.com/CostaAspro708" class='link' target="_blank"> <GitHubIcon sx={{ fontSize: 35 }}/> </Link>
           </li>
           <li> 
-            <Link href="https://github.com/CostaAspro708" class='link' target="_blank"> <LinkedInIcon sx={{ fontSize: 35 }}/> </Link>
+            <Link href="https://www.linkedin.com/in/costa-aspromourgos-94513820b/" class='link' target="_blank"> <LinkedInIcon sx={{ fontSize: 35 }}/> </Link>
           </li>
           <li> 
-            <Link href="https://github.com/CostaAspro708" class='link' target="_blank"> <FacebookIcon sx={{ fontSize: 35 }}/> </Link>
+            <Link href="https://www.facebook.com/costa.aspromourgos" class='link' target="_blank"> <FacebookIcon sx={{ fontSize: 35 }}/> </Link>
           </li>
       </ul>
 
@@ -78,28 +78,28 @@ function App() {
       burgerClick();
       $('html,body').animate({
           scrollTop: $(".about").offset().top},
-          'slow');
+          'fast');
     });
 
     $(".skills_link").click(function() {
       burgerClick()
       $('html,body').animate({
           scrollTop: $(".skills").offset().top},
-          'slow');
+          'fast');
     });
 
     $(".projects_link").click(function() {
       burgerClick()
       $('html,body').animate({
           scrollTop: $(".projects").offset().top},
-          'slow');
+          'fast');
     });
 
     $(".contact_link").click(function() {
       burgerClick()
       $('html,body').animate({
           scrollTop: $(".contact").offset().top},
-          'slow');
+          'fast');
     });
 
     
@@ -143,7 +143,6 @@ function App() {
               <ul>
                 <li>Javascript</li>
                 <li>Python</li>
-                <li>PHP</li>
                 <li>Java</li>
                 <li>C</li>
                 <li>C#</li>
@@ -153,9 +152,8 @@ function App() {
             <div class="frameworks">
               <h5 class="skill_heading">Frameworks</h5>
               <ul>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Laravel</li>
+                <li>React</li>
+                <li>Node</li>
               </ul>
             </div>
             
@@ -181,7 +179,7 @@ function App() {
           <div class="contact-content">
           <p>I would love to hear from you feel free to contact me through my email or mobile.</p>
           <ul>
-            <li> <h1> <a href="mailto: cgaspro@gmail.com">cgaspro@gmail.com</a> </h1></li>
+            <li> <h1> <a href="mailto: cgaspro2@gmail.com">cgaspro2@gmail.com</a> </h1></li>
             <li> <h1> 0447 364 567 </h1></li>
           </ul>
           </div>
