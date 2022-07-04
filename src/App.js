@@ -149,7 +149,7 @@ function App() {
         </div>
         <div class="skills">
          
-          <h1>My Skills</h1>
+          <h1>MMy Skills</h1>
            
           <div class="container">
             <div class="languages">
