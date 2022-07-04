@@ -1,8 +1,16 @@
-html {
+
+  html {
+
     background: #121212;
     font-family: Verdana, sans-serif;
     color: #03dac6;
   }
+
+  .icon {
+
+    overflow: hidden;
+  }
+  
 
 nav ul {
     list-style-type: none;
@@ -11,7 +19,7 @@ nav ul {
 }
 nav ul li{
     margin-right: 1rem;
-
+    cursor: pointer;
 }
 
 nav ul li a {
@@ -21,7 +29,7 @@ nav ul li a {
     color: #03dac6;
 }
 
-nav ul li:nth-child(5) a{
+nav ul li:nth-child(4) a{
     border-radius: 5px;
     border: solid #03dac6;
     border-width: thin;
@@ -31,7 +39,7 @@ nav ul li a:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     transition: 0.25s;
-    
+
 }
 
 .hamburger {
@@ -65,13 +73,16 @@ header {
 }
 
 .sidebar {
-    
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 100px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     top:0;
     left: 0;
 
+}
+
+.App {
+    margin-left: 100px;
 }
 
 .sidebar ul {
@@ -90,7 +101,7 @@ header {
     color: #03dac6;
 }
 .link:hover {
-    color: #03da96; 
+    color: #03da96;
 }
 
 .para {
@@ -99,6 +110,13 @@ header {
 
 .intro {
     padding-top: 70px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 0;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -122,65 +140,194 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     margin: 0;
-     
 }
 .intro .hi {
     padding-left: 70px;
 }
+
+.my_resume {
+    z-index: 1;
+    padding-top: 250px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.my_resume a{
+    z-index: 1;
+    color: rgb(0, 174, 90);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid rgb(0, 174, 90);
+    border-width: thin;
+}
+.my_resume a:hover{
+    z-index: 1;
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: 0.25s;
+} 
 .app-body {
     margin-left: 100px; /* Same as sidebar width*/
 }
 
 .about {
     padding-top: 100px;
+    padding-bottom: 200px;
 }
+
+.about .container{
+
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.about .img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.skills {
+    padding-bottom: 200px;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1f2933a7;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.skills .container ul{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.skills .container ul li{
+    margin: 0 0;
+    padding: 0 0;
+    list-style: none;
+}
+
+.skills .container ul li::before{
+    content: "> ";
+    font-size: small;
+    color: rgb(0, 174, 90);
+}
+.skill_heading {
+    font-size: 17px;
+}
+.list{
+    list-style: none;
+}
+
+.projects {
+    padding-bottom: 200px;
+}
+
 .contact {
-    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.contact-content{
+    background-color: #1f2933a7;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.contact ul li h1{
+    color: rgb(0, 174, 90);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.contact ul li h1 a{
+    color: rgb(0, 174, 90);
+    text-decoration: none;
+    
+}
+.about {
+    margin-top: 200px;
+}
+@media (max-width: 500px){
+    h2 {
+        font-size: 32px;
+
+    }
+    .intro h2.name {
+        font-size: 32px;
+
+    }
 }
 @media (max-width: 760px){
+    .App {
+        overflow: hidden;
+        position: relative;
+        margin-left: 0;
+        
+    }
+    .about .container {
+        flex-direction: column;
+    }
     .app-body {
         margin-left: 5px; /* Same as sidebar width*/
     }
     .sidebar {
-        height: 100px;
         width: 100%;
-        top: auto;
-        position: absolute;
-        margin-right: 0;
-        
-        
+        height: 20px;
+        top:auto;
+        left: auto;
+        position: relative;
+        margin-bottom: 70px;
+        margin-top: 50px;
+       
     }
+    
     .sidebar ul {
-        top: auto;
-        padding-top: 0;
-        transform: none;
-        -ms-transform: none;
+        padding-left: 0;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        position: static;
+        -ms-transform: none;
+        transform: none;
+        padding-top: 0px;
+        margin-top: 0;
+        width: 100%;
+        justify-content: space-evenly;
+      
+    }
 
-    }
     .sidebar ul li {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        position: static;
-    }
-    body {
-        overflow-x: hidden;
-        
+        margin-top: 0px;
+      
     }
     .hamburger{
         display: flex;
         cursor: pointer;
-        z-index: 1;
+        z-index: 6;
     }
     nav ul {
+       
         padding-top: 100px;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 0vh;
         right: -150%;
         background-color: #1f2933;
@@ -188,6 +335,7 @@ h2 {
         width: 50%;
         align-items: center;
         transition: right 0.3s ease-in;
+        z-index: 5;
     }
     nav ul li {
         margin-right: 15px;
@@ -199,11 +347,26 @@ h2 {
         right:0;
         transition: right 0.3s ease-in;
     }
-
+    .contact ul{
+        flex-direction: column;
+        align-items: center;
+    }
     .fixed-position {
         overflow: hidden;
      }
+    .blurr{
+        padding-bottom: 200px;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
 
+    .cross{
+        position: fixed;
+    }
+   
     .cross .bar:nth-child(2){
         opacity: 0;
     }
